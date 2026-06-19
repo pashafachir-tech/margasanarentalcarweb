@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Armada | Margasana Rental Mobil Banjarmasin</title>
+  <meta name="description" content="Lihat semua armada rental mobil Margasana Banjarmasin. Hiace, Fortuner, Alphard, Triton, Innova, Avanza & lebih banyak pilihan dengan harga terjangkau.">
+  <meta name="keywords" content="katalog rental mobil banjarmasin, sewa hiace banjarmasin, sewa fortuner banjarmasin, sewa alphard banjarmasin, margasana armada">
+  <link rel="canonical" href="https://www.margasanarental.com/katalog.html">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <meta property="og:title" content="Katalog Armada | Margasana Rental Mobil Banjarmasin">
+  <meta property="og:description" content="Lihat semua armada rental mobil Margasana Banjarmasin. Hiace, Fortuner, Alphard, Triton, Innova, Avanza & lebih banyak pilihan.">
+  <meta property="og:image" content="https://www.margasanarental.com/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://www.margasanarental.com/katalog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            margasana: {
+              green: '#009640',
+              dark:  '#004d21',
+              light: '#e8f5ee',
+              gold:  '#f0a500',
+              text:  '#1a1a2e',
+              gray:  '#f8f9fa',
+            }
+          },
+          fontFamily: {
+            heading: ['Sora', 'sans-serif'],
+            body:    ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1a1a2e; overflow-x: hidden; }
+
+    /* ── Navbar — selalu solid ── */
+    #navbar { background: #ffffff; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    .nav-link { transition: color 0.2s; color: #1a1a2e; }
+    .nav-link:hover { color: #009640; }
+    .nav-link.active-link { color: #009640; position: relative; }
+    .nav-link.active-link::after {
+      content: ''; position: absolute;
+      bottom: -4px; left: 0; right: 0;
+      height: 2px; background: #009640; border-radius: 2px;
+    }
+
+    /* ── Hamburger ── */
+    .hamburger-line {
+      display: block; width: 24px; height: 2px;
+      border-radius: 2px; background: #1a1a2e;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform-origin: center;
+    }
+    #hamburger.is-open .line-1 { transform: translateY(8px) rotate(45deg); }
+    #hamburger.is-open .line-2 { opacity: 0; transform: scaleX(0); }
+    #hamburger.is-open .line-3 { transform: translateY(-8px) rotate(-45deg); }
+
+    /* ── Page Header ── */
+    #page-header {
+      background: linear-gradient(135deg, #004d21 0%, #009640 60%, #00b84d 100%);
+      padding-top: 80px;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+    }
+
+    /* ── Badge kategori ── */
+    .badge-premium { background: #f0a500; color: white; }
+    .badge-daily   { background: #009640; color: white; }
+    .badge-minibus { background: #475569; color: white; }
+    .badge-pickup  { background: #92400e; color: white; }
+
+    /* ── Ribbon Terlaris ── */
+    .ribbon-terlaris {
+      position: absolute; top: 0; right: 0;
+      background: #ef4444; color: white;
+      font-size: 10px; font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 4px 10px;
+      border-bottom-left-radius: 8px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Filter Bar ── */
+    .filter-btn {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px; font-weight: 600;
+      padding: 8px 18px; border-radius: 9999px;
+      border: 2px solid #e5e7eb;
+      background: #fff; color: #6b7280;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap; flex-shrink: 0;
+      display: inline-flex; align-items: center; gap: 4px;
+    }
+    .filter-btn:hover                              { border-color: #009640; color: #009640; }
+    .filter-btn.is-active                          { background: #009640; border-color: #009640; color: #fff; }
+    .filter-btn.is-active.filter-premium           { background: #f0a500; border-color: #f0a500; color: #fff; }
+    .filter-btn.is-active.filter-minibus           { background: #475569; border-color: #475569; color: #fff; }
+    .filter-btn.is-active.filter-pickup            { background: #92400e; border-color: #92400e; color: #fff; }
+    .filter-btn.filter-premium:not(.is-active):hover { border-color: #f0a500; color: #f0a500; }
+    .filter-btn.filter-minibus:not(.is-active):hover { border-color: #475569; color: #475569; }
+    .filter-btn.filter-pickup:not(.is-active):hover  { border-color: #92400e; color: #92400e; }
+
+    .filter-scroll {
+      overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none;
+    }
+    .filter-scroll::-webkit-scrollbar { display: none; }
+
+    /* ── Card Kendaraan ── */
+    .card-kendaraan {
+      background: #fff; border-radius: 16px;
+      overflow: hidden; border: 1px solid #f0f0f0;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card-kendaraan:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,150,64,0.15);
+    }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(6px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .card-animate { animation: cardIn 0.25s ease forwards; }
+
+    /* ── Grid baris terakhir desktop ── */
+    .last-row-wrap {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .last-row-wrap .card-kendaraan {
+      width: calc(25% - 10px);
+      flex-shrink: 0;
+    }
+
+    /* ── Button ── */
+    .btn-primary { transition: background-color 0.2s ease, transform 0.15s ease; }
+    .btn-primary:hover { transform: scale(1.02); }
+
+    /* ── WA Popup ── */
+    #wa-popup-overlay {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+      align-items: flex-end; justify-content: center;
+    }
+    #wa-popup-overlay.is-open { display: flex; }
+    #wa-popup-modal {
+      background: #fff; border-radius: 24px 24px 0 0;
+      width: 100%; max-width: 480px;
+      padding: 28px 24px 36px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-out;
+      position: relative;
+    }
+    #wa-popup-overlay.is-open #wa-popup-modal { transform: translateY(0); }
+
+    /* ── WA Float pulse ── */
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+      50%       { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
+    }
+    #wa-float { animation: wa-pulse 2.5s ease-in-out infinite; }
+
+    /* ── Back to top ── */
+    #back-top { transition: opacity 0.3s ease, transform 0.3s ease; }
+    #back-top.is-hidden { opacity: 0; pointer-events: none; transform: translateY(8px); }
+
+    /* ── No result ── */
+    #no-result { display: none; }
+    #no-result.is-visible { display: flex; }
+
+    /* ── Swiper ── */
+    .swiper-pagination-bullet-active { background: #009640 !important; }
+
+    /* ── Mobile bottom nav active ── */
+    .bottom-nav-link.is-active svg  { color: #009640; }
+    .bottom-nav-link.is-active span { color: #009640; }
+  </style>
+</head>
+<body class="font-body">
+
+  <!-- ════════════════════════════════
+       WA POPUP
+  ════════════════════════════════ -->
+  <div id="wa-popup-overlay" role="dialog" aria-modal="true" aria-label="Hubungi Kami">
+    <div id="wa-popup-modal">
+      <button onclick="closeWAPopup()"
+              class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+              aria-label="Tutup">
+        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="mb-6 pr-8">
+        <h3 class="font-heading font-bold text-xl text-margasana-text mb-1">Hubungi Kami</h3>
+        <p class="font-body text-sm text-gray-500">Pilih kontak yang ingin Anda hubungi</p>
+      </div>
+      <!-- Owner -->
+      <a id="popup-owner-link"
+         href="https://wa.me/62811506480?text=Halo+Margasana+Rental,+saya+ingin+informasi+sewa+mobil"
+         target="_blank" rel="noopener" onclick="closeWAPopup()"
+         class="group flex items-center gap-4 w-full border-2 border-gray-200 hover:border-yellow-400 rounded-2xl p-4 mb-3 transition-all duration-200 hover:bg-yellow-50">
+        <div class="w-11 h-11 rounded-full bg-yellow-50 border-2 border-yellow-300 flex items-center justify-center flex-shrink-0 group-hover:border-yellow-400 transition-colors">
+          <svg class="w-5 h-5 text-yellow-500" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/>
+          </svg>
+        </div>
+        <div class="flex-1 text-left">
+          <div class="font-heading font-bold text-base text-margasana-text group-hover:text-yellow-600 transition-colors">Owner</div>
+          <div class="font-body text-xs text-gray-500 group-hover:text-yellow-500 transition-colors">Hj. Adhe — 0811 506 480</div>
+        </div>
+        <svg class="w-4 h-4 text-gray-300 group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <!-- Admin -->
+      <a id="popup-admin-link"
+         href="https://wa.me/62811516800?text=Halo+Margasana+Rental,+saya+ingin+informasi+sewa+mobil"
+         target="_blank" rel="noopener" onclick="closeWAPopup()"
+         class="group flex items-center gap-4 w-full border-2 border-gray-200 hover:border-margasana-green rounded-2xl p-4 mb-5 transition-all duration-200 hover:bg-margasana-light">
+        <div class="w-11 h-11 rounded-full bg-margasana-light border-2 border-margasana-green/30 flex items-center justify-center flex-shrink-0 group-hover:border-margasana-green transition-colors">
+          <svg class="w-5 h-5 text-margasana-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-6a9 9 0 0118 0v6"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/>
+          </svg>
+        </div>
+        <div class="flex-1 text-left">
+          <div class="font-heading font-bold text-base text-margasana-text group-hover:text-margasana-green transition-colors">Office Admin</div>
+          <div class="font-body text-xs text-gray-500 group-hover:text-margasana-green transition-colors">Admin Booking — 0811 516 800</div>
+        </div>
+        <svg class="w-4 h-4 text-gray-300 group-hover:text-margasana-green transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <p class="text-center font-body text-xs text-gray-400">
+        🕐 Kami siap melayani <span class="font-semibold text-gray-500">06.00–21.00 WITA</span>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8">
+    <div class="max-w-6xl mx-auto flex items-center justify-between h-16 md:h-20">
+
+      <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+        <div class="w-9 h-9 rounded-full bg-margasana-green flex items-center justify-center shadow">
+          <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white">
+            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+          </svg>
+        </div>
+        <div class="leading-tight">
+          <div class="font-heading font-bold text-margasana-green text-sm">Margasana</div>
+          <div class="font-body text-gray-400 text-xs">Rental Mobil</div>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html"   class="nav-link font-body font-semibold text-sm">Beranda</a>
+        <a href="katalog.html" class="nav-link active-link font-body font-semibold text-sm">Katalog</a>
+        <a href="kontak.html"  class="nav-link font-body font-semibold text-sm">Kontak Kami</a>
+      </div>
+
+      <!-- Desktop: Status Dot + CTA -->
+      <div class="hidden md:flex items-center gap-4">
+        <div class="flex items-center gap-1.5">
+          <span id="status-dot" class="w-2 h-2 rounded-full inline-block"></span>
+          <span id="status-label" class="font-body text-xs font-medium text-margasana-text"></span>
+        </div>
+        <button onclick="openWAPopup()"
+                class="inline-flex items-center gap-2 bg-margasana-green text-white font-body font-semibold text-sm px-5 py-2.5 rounded-full btn-primary hover:bg-margasana-dark">
+          <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Sewa Sekarang
+        </button>
+      </div>
+
+      <button id="hamburger" class="md:hidden flex flex-col gap-[6px] p-2 -mr-1" aria-label="Buka menu">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg rounded-b-2xl overflow-hidden">
+      <div class="flex flex-col py-2">
+        <a href="index.html"   class="px-6 py-4 font-body font-semibold text-margasana-text hover:text-margasana-green border-b border-gray-100 text-sm transition-colors">🏠 Beranda</a>
+        <a href="katalog.html" class="px-6 py-4 font-body font-semibold text-margasana-green border-b border-gray-100 text-sm">🚗 Katalog Armada</a>
+        <a href="kontak.html"  class="px-6 py-4 font-body font-semibold text-margasana-text hover:text-margasana-green border-b border-gray-100 text-sm transition-colors">📞 Kontak Kami</a>
+        <div class="px-6 py-4">
+          <button onclick="openWAPopup()"
+                  class="flex items-center justify-center gap-2 w-full bg-margasana-green text-white font-body font-semibold text-sm py-3 rounded-full">
+            💬 Chat WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ════════════════════════════════
+       PAGE HEADER
+  ════════════════════════════════ -->
+  <header id="page-header" class="pb-0">
+    <div class="max-w-6xl mx-auto px-4 pt-6 pb-10">
+      <nav class="flex items-center gap-2 mb-5" aria-label="Breadcrumb">
+        <a href="index.html" class="font-body text-white/60 text-xs hover:text-white transition-colors flex items-center gap-1">
+          <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+          </svg>
+          Beranda
+        </a>
+        <svg class="w-3 h-3 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+        <span class="font-body text-white text-xs font-semibold">Katalog</span>
+      </nav>
+      <div data-aos="fade-up">
+        <h1 class="font-heading font-extrabold text-3xl md:text-5xl text-white mb-2">Katalog Armada</h1>
+        <p class="font-body text-white/70 text-sm md:text-base">19 pilihan kendaraan untuk semua kebutuhan perjalanan Anda di Banjarmasin</p>
+      </div>
+    </div>
+    <svg class="w-full block" style="margin-bottom:-1px" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C360,70 1080,10 1440,40 L1440,60 L0,60 Z" fill="#f8f9fa"/>
+    </svg>
+  </header>
+
+
+  <!-- ════════════════════════════════
+       SYARAT & KETENTUAN
+       Mobile: langsung tampil (no accordion)
+  ════════════════════════════════ -->
+  <section class="bg-margasana-gray py-8 px-4">
+    <div class="max-w-4xl mx-auto" data-aos="fade-up">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+
+        <!-- Header — dekoratif saja, bukan toggle -->
+        <div class="flex items-center gap-3 px-5 py-4 border-b border-gray-100">
+          <div class="w-8 h-8 rounded-full bg-margasana-light flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-margasana-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <span class="font-heading font-semibold text-sm md:text-base text-margasana-text">Syarat & Ketentuan Rental Mobil</span>
+        </div>
+
+        <!-- Body — selalu tampil di semua ukuran layar -->
+        <div class="px-5 py-6 grid md:grid-cols-2 gap-6">
+
+          <!-- Syarat Lepas Kunci -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-6 h-6 rounded-full bg-margasana-green text-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-semibold text-xs text-margasana-text uppercase tracking-wide">Syarat Lepas Kunci</h3>
+            </div>
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-margasana-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                e-KTP Banjarmasin dan sekitarnya
+              </li>
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-margasana-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                STNK & Sepeda motor ditinggal
+              </li>
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-margasana-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Nama/Alamat STNK sepeda motor wajib sama dengan e-KTP
+              </li>
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-margasana-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Memiliki SIM A yang masih berlaku
+              </li>
+            </ul>
+          </div>
+
+          <!-- Ketentuan Harga -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-6 h-6 rounded-full bg-margasana-dark text-white flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-semibold text-xs text-margasana-text uppercase tracking-wide">Ketentuan Harga</h3>
+            </div>
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                Harga belum termasuk sopir dan BBM
+              </li>
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                Biaya sopir Rp 150.000–250.000 (tergantung tujuan), belum termasuk makan & penginapan jika keluar kota
+              </li>
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                Biaya tol & parkir ditanggung penyewa
+              </li>
+              <li class="flex items-start gap-2 font-body text-xs text-gray-600">
+                <svg class="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                Overtime dihitung per jam setelah durasi sewa
+              </li>
+            </ul>
+            <button onclick="openWAPopup()"
+                    class="mt-5 inline-flex items-center gap-1.5 bg-margasana-green text-white font-body font-semibold text-xs px-4 py-2 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Tanya & Konfirmasi Sekarang
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       FILTER + GRID + MOBILE SWIPER
+  ════════════════════════════════ -->
+  <section class="bg-margasana-gray pt-4 pb-20 md:pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Filter Bar -->
+      <div class="flex items-center gap-2 md:gap-3 mb-4 filter-scroll pb-1" data-aos="fade-up">
+        <span class="font-body text-xs font-semibold text-gray-400 whitespace-nowrap flex-shrink-0">Filter:</span>
+        <button class="filter-btn is-active" data-filter="all">Semua (19)</button>
+        <button class="filter-btn filter-daily"   data-filter="daily">Daily</button>
+        <button class="filter-btn filter-premium" data-filter="premium">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>
+          Premium
+        </button>
+        <button class="filter-btn filter-minibus" data-filter="minibus">Minibus</button>
+        <button class="filter-btn filter-pickup"  data-filter="pickup">Pick-up</button>
+      </div>
+
+      <!-- Result count -->
+      <p class="font-body text-xs text-gray-400 mb-5" data-aos="fade-up">
+        Menampilkan <span id="count-num">19</span> kendaraan
+      </p>
+
+      <!-- ══════════════════════
+           DESKTOP GRID (md+)
+      ══════════════════════ -->
+      <div id="desktop-grid" class="hidden md:grid grid-cols-4 gap-5" data-aos="fade-up" data-aos-delay="80">
+
+        <!-- Mahkota SVG helper (inline) -->
+        <!-- 1. Alphard New — Premium -->
+        <div class="card-kendaraan" data-kategori="premium">
+          <div class="relative">
+            <img src="assets/img/armada/alphard-new.jpg" onerror="this.src='https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80'" alt="Rental Alphard New Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="eager">
+            <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+            </span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Alphard New</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">VIP · Wedding · Acara Formal</p>
+            <button onclick="openWAPopup('Alphard+New')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 2. Alphard Transformer — Premium -->
+        <div class="card-kendaraan" data-kategori="premium">
+          <div class="relative">
+            <img src="assets/img/armada/alphard-transformer.jpg" onerror="this.src='https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80'" alt="Rental Alphard Transformer Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="eager">
+            <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+            </span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Alphard Transformer</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">VIP · Wedding · Eksklusif</p>
+            <button onclick="openWAPopup('Alphard+Transformer')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 3. Fortuner — Premium -->
+        <div class="card-kendaraan" data-kategori="premium">
+          <div class="relative">
+            <img src="assets/img/armada/fortuner.jpg" onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&q=80'" alt="Rental Fortuner Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="eager">
+            <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+            </span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Fortuner</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Perjalanan Dinas · Keluarga · Wisata</p>
+            <button onclick="openWAPopup('Fortuner')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 4. Pajero Sport — Premium -->
+        <div class="card-kendaraan" data-kategori="premium">
+          <div class="relative">
+            <img src="assets/img/armada/pajero.jpg" onerror="this.src='https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80'" alt="Rental Pajero Sport Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="eager">
+            <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+            </span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Mitsubishi Pajero Sport</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">SUV Premium · Dinas · Medan Berat</p>
+            <button onclick="openWAPopup('Pajero+Sport')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 5. Hiace Luxury — Premium -->
+        <div class="card-kendaraan" data-kategori="premium">
+          <div class="relative">
+            <img src="assets/img/armada/hiace-luxury.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80'" alt="Rental Hiace Luxury Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+            </span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Hiace Luxury</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 11 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Premium · Eksklusif · Ruang Kaki Lega</p>
+            <button onclick="openWAPopup('Hiace+Luxury')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 6. Innova Zenix — Premium -->
+        <div class="card-kendaraan" data-kategori="premium">
+          <div class="relative">
+            <img src="assets/img/armada/innova-zenix.jpg" onerror="this.src='https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=500&q=80'" alt="Rental Innova Zenix Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+            </span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Innova Zenix</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Terbaru · Nyaman · Perjalanan Jauh</p>
+            <button onclick="openWAPopup('Innova+Zenix')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 7. Avanza — Daily + TERLARIS -->
+        <div class="card-kendaraan" data-kategori="daily">
+          <div class="relative">
+            <img src="assets/img/armada/avanza.jpg" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80'" alt="Rental Avanza Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+            <div class="ribbon-terlaris">⭐ Terlaris</div>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Avanza</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Harian · Mingguan · Ekonomis</p>
+            <button onclick="openWAPopup('Avanza')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 8. Hiace Premio — Minibus -->
+        <div class="card-kendaraan" data-kategori="minibus">
+          <div class="relative">
+            <img src="assets/img/armada/hiace-premio.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80'" alt="Rental Hiace Premio Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-minibus absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Minibus</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Hiace Premio</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 11 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Kenyamanan Ekstra · Rombongan</p>
+            <button onclick="openWAPopup('Hiace+Premio')" class="block w-full text-center bg-slate-600 text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-slate-700 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 9. Innova Reborn — Daily -->
+        <div class="card-kendaraan" data-kategori="daily">
+          <div class="relative">
+            <img src="assets/img/armada/innova-reborn.jpg" onerror="this.src='https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=500&q=80'" alt="Rental Innova Reborn Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Innova Reborn</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Keluarga · Perjalanan Jauh · Wisata</p>
+            <button onclick="openWAPopup('Innova+Reborn')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 10. Honda HR-V — Daily -->
+        <div class="card-kendaraan" data-kategori="daily">
+          <div class="relative">
+            <img src="assets/img/armada/hrv.jpg" onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500&q=80'" alt="Rental Honda HRV Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Honda HR-V</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 5 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">SUV · Kota · Perjalanan Harian</p>
+            <button onclick="openWAPopup('HRV')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 11. Hiace Comuter — Minibus -->
+        <div class="card-kendaraan" data-kategori="minibus">
+          <div class="relative">
+            <img src="assets/img/armada/hiace-comuter.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80'" alt="Rental Hiace Comuter Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-minibus absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Minibus</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Hiace Comuter</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 16 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Rombongan Besar · Study Tour · Event</p>
+            <button onclick="openWAPopup('Hiace+Comuter')" class="block w-full text-center bg-slate-600 text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-slate-700 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 12. Xpander — Daily -->
+        <div class="card-kendaraan" data-kategori="daily">
+          <div class="relative">
+            <img src="assets/img/armada/xpander.jpg" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80'" alt="Rental Xpander Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Mitsubishi Xpander</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">MPV · Harian · Keluarga</p>
+            <button onclick="openWAPopup('Xpander')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 13. Honda Jazz — Daily -->
+        <div class="card-kendaraan" data-kategori="daily">
+          <div class="relative">
+            <img src="assets/img/armada/jazz.jpg" onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500&q=80'" alt="Rental Honda Jazz Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Honda Jazz</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 5 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Kota · Harian · Praktis</p>
+            <button onclick="openWAPopup('Jazz')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 14. Toyota Yaris — Daily -->
+        <div class="card-kendaraan" data-kategori="daily">
+          <div class="relative">
+            <img src="assets/img/armada/yaris.jpg" onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500&q=80'" alt="Rental Toyota Yaris Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Yaris</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 5 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Kota · Harian · Efisien</p>
+            <button onclick="openWAPopup('Yaris')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 15. Triton — Pickup -->
+        <div class="card-kendaraan" data-kategori="pickup">
+          <div class="relative">
+            <img src="assets/img/armada/triton.jpg" onerror="this.src='https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80'" alt="Rental Triton Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-pickup absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Pick-up</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Mitsubishi Triton</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 5 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Double Cabin · Medan Berat · Off-road</p>
+            <button onclick="openWAPopup('Triton')" class="block w-full text-center bg-amber-700 text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-amber-800 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- 16. Hilux — Pickup -->
+        <div class="card-kendaraan" data-kategori="pickup">
+          <div class="relative">
+            <img src="assets/img/armada/hilux.jpg" onerror="this.src='https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80'" alt="Rental Toyota Hilux Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <span class="badge-pickup absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Pick-up</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Hilux</h2>
+            <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 5 penumpang</p>
+            <p class="font-body text-xs text-gray-400 mb-4">Double Cabin · Pertambangan · Tangguh</p>
+            <button onclick="openWAPopup('Hilux')" class="block w-full text-center bg-amber-700 text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-amber-800 cursor-pointer">Sewa Sekarang</button>
+          </div>
+        </div>
+
+        <!-- Baris 5: 17-19 — centered -->
+        <div class="last-row-wrap">
+
+          <!-- 17. Bus Pariwisata — Minibus -->
+          <div class="card-kendaraan" data-kategori="minibus">
+            <div class="relative">
+              <img src="assets/img/armada/bus.jpg" onerror="this.src='https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=500&q=80'" alt="Rental Bus Pariwisata Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+              <span class="badge-minibus absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Minibus</span>
+            </div>
+            <div class="p-4">
+              <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Bus Pariwisata</h2>
+              <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 30 penumpang</p>
+              <p class="font-body text-xs text-gray-400 mb-4">Wisata Rombongan · Study Tour · Event</p>
+              <button onclick="openWAPopup('Bus+Pariwisata')" class="block w-full text-center bg-slate-600 text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-slate-700 cursor-pointer">Sewa Sekarang</button>
+            </div>
+          </div>
+
+          <!-- 18. Wedding Car — Premium -->
+          <div class="card-kendaraan" data-kategori="premium">
+            <div class="relative">
+              <img src="assets/img/armada/wedding.jpg" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=500&q=80'" alt="Rental Wedding Car Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+              <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1">
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium
+              </span>
+            </div>
+            <div class="p-4">
+              <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Wedding Car</h2>
+              <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+              <p class="font-body text-xs text-gray-400 mb-4">Pernikahan · Siraman · Dekorasi Spesial</p>
+              <button onclick="openWAPopup('Wedding+Car')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-yellow-600 cursor-pointer">Sewa Sekarang</button>
+            </div>
+          </div>
+
+          <!-- 19. Avanza New — Daily -->
+          <div class="card-kendaraan" data-kategori="daily">
+            <div class="relative">
+              <img src="assets/img/armada/avanza-new.jpg" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80'" alt="Rental Avanza New Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+              <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+            </div>
+            <div class="p-4">
+              <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Avanza New</h2>
+              <p class="font-body text-gray-400 text-xs mb-1">Kapasitas 6 penumpang</p>
+              <p class="font-body text-xs text-gray-400 mb-4">Terbaru · Harian · Keluarga</p>
+              <button onclick="openWAPopup('Avanza+New')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full btn-primary hover:bg-margasana-dark cursor-pointer">Sewa Sekarang</button>
+            </div>
+          </div>
+
+        </div><!-- /last-row-wrap -->
+
+      </div><!-- /desktop-grid -->
+
+
+      <!-- ══════════════════════
+           MOBILE SWIPER
+           slidesPerView:1, loop:true — stabil
+      ══════════════════════ -->
+      <div class="md:hidden" data-aos="fade-up" data-aos-delay="80">
+        <div class="swiper swiper-katalog-mobile">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1: Alphard New -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/alphard-new.jpg" onerror="this.src='https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80'" alt="Rental Alphard New Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="eager">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Alphard New</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · VIP · Wedding</p>
+                  <button onclick="openWAPopup('Alphard+New')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Alphard Transformer -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/alphard-transformer.jpg" onerror="this.src='https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80'" alt="Rental Alphard Transformer Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Alphard Transformer</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · VIP · Eksklusif</p>
+                  <button onclick="openWAPopup('Alphard+Transformer')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Fortuner -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/fortuner.jpg" onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&q=80'" alt="Rental Fortuner Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Fortuner</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · Dinas · Wisata</p>
+                  <button onclick="openWAPopup('Fortuner')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Pajero Sport -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/pajero.jpg" onerror="this.src='https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80'" alt="Rental Pajero Sport Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Mitsubishi Pajero Sport</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · SUV · Dinas</p>
+                  <button onclick="openWAPopup('Pajero+Sport')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Hiace Luxury -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/hiace-luxury.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80'" alt="Rental Hiace Luxury Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Hiace Luxury</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">11 penumpang · Premium · Eksklusif</p>
+                  <button onclick="openWAPopup('Hiace+Luxury')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Innova Zenix -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/innova-zenix.jpg" onerror="this.src='https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=500&q=80'" alt="Rental Innova Zenix Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Innova Zenix</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · Terbaru · Nyaman</p>
+                  <button onclick="openWAPopup('Innova+Zenix')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7: Avanza — TERLARIS -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/avanza.jpg" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80'" alt="Rental Avanza Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                  <div class="ribbon-terlaris">⭐ Terlaris</div>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Avanza</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · Harian · Ekonomis</p>
+                  <button onclick="openWAPopup('Avanza')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 8: Hiace Premio -->
+            <div class="swiper-slide" data-kategori="minibus">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/hiace-premio.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80'" alt="Rental Hiace Premio Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-minibus absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Minibus</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Hiace Premio</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">11 penumpang · Rombongan</p>
+                  <button onclick="openWAPopup('Hiace+Premio')" class="block w-full text-center bg-slate-600 text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 9: Innova Reborn -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/innova-reborn.jpg" onerror="this.src='https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=500&q=80'" alt="Rental Innova Reborn Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Innova Reborn</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · Keluarga · Wisata</p>
+                  <button onclick="openWAPopup('Innova+Reborn')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 10: HR-V -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/hrv.jpg" onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500&q=80'" alt="Rental Honda HRV Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Honda HR-V</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">5 penumpang · SUV · Kota</p>
+                  <button onclick="openWAPopup('HRV')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 11: Hiace Comuter -->
+            <div class="swiper-slide" data-kategori="minibus">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/hiace-comuter.jpg" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80'" alt="Rental Hiace Comuter Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-minibus absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Minibus</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Hiace Comuter</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">16 penumpang · Study Tour</p>
+                  <button onclick="openWAPopup('Hiace+Comuter')" class="block w-full text-center bg-slate-600 text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 12: Xpander -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/xpander.jpg" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80'" alt="Rental Xpander Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Mitsubishi Xpander</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · MPV · Keluarga</p>
+                  <button onclick="openWAPopup('Xpander')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 13: Jazz -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/jazz.jpg" onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500&q=80'" alt="Rental Honda Jazz Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Honda Jazz</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">5 penumpang · Kota · Praktis</p>
+                  <button onclick="openWAPopup('Jazz')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 14: Yaris -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/yaris.jpg" onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500&q=80'" alt="Rental Toyota Yaris Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Yaris</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">5 penumpang · Kota · Efisien</p>
+                  <button onclick="openWAPopup('Yaris')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 15: Triton -->
+            <div class="swiper-slide" data-kategori="pickup">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/triton.jpg" onerror="this.src='https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80'" alt="Rental Triton Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-pickup absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Pick-up</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Mitsubishi Triton</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">5 penumpang · Double Cabin</p>
+                  <button onclick="openWAPopup('Triton')" class="block w-full text-center bg-amber-700 text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 16: Hilux -->
+            <div class="swiper-slide" data-kategori="pickup">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/hilux.jpg" onerror="this.src='https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80'" alt="Rental Toyota Hilux Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-pickup absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Pick-up</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Hilux</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">5 penumpang · Pertambangan</p>
+                  <button onclick="openWAPopup('Hilux')" class="block w-full text-center bg-amber-700 text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 17: Bus Pariwisata -->
+            <div class="swiper-slide" data-kategori="minibus">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/bus.jpg" onerror="this.src='https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=500&q=80'" alt="Rental Bus Pariwisata Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-minibus absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Minibus</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Bus Pariwisata</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">30 penumpang · Study Tour · Event</p>
+                  <button onclick="openWAPopup('Bus+Pariwisata')" class="block w-full text-center bg-slate-600 text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 18: Wedding Car -->
+            <div class="swiper-slide" data-kategori="premium">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/wedding.jpg" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=500&q=80'" alt="Rental Wedding Car Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-premium absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow flex items-center gap-1"><svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 2l3.5 8L21 5l-2 11H5zm2.7 2h8.6c.4 0 .7.3.7.7v.6c0 .4-.3.7-.7.7H7.7c-.4 0-.7-.3-.7-.7v-.6c0-.4.3-.7.7-.7z"/></svg>Premium</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Wedding Car</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · Pernikahan · Siraman</p>
+                  <button onclick="openWAPopup('Wedding+Car')" class="block w-full text-center bg-margasana-gold text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 19: Avanza New -->
+            <div class="swiper-slide" data-kategori="daily">
+              <div class="card-kendaraan mx-1">
+                <div class="relative">
+                  <img src="assets/img/armada/avanza-new.jpg" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=500&q=80'" alt="Rental Avanza New Banjarmasin" class="w-full aspect-[4/3] object-cover" loading="lazy">
+                  <span class="badge-daily absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full shadow">Daily</span>
+                </div>
+                <div class="p-4">
+                  <h2 class="font-heading font-bold text-base text-margasana-text mb-0.5">Toyota Avanza New</h2>
+                  <p class="font-body text-gray-400 text-xs mb-1">6 penumpang · Terbaru · Harian</p>
+                  <button onclick="openWAPopup('Avanza+New')" class="block w-full text-center bg-margasana-green text-white font-body font-semibold text-sm py-2.5 rounded-full cursor-pointer mt-3">Sewa Sekarang</button>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /swiper-wrapper -->
+          <div class="swiper-pagination mt-5 pb-2"></div>
+        </div><!-- /swiper -->
+
+        <!-- Mobile: no result -->
+        <div id="no-result-mobile" class="hidden flex-col items-center justify-center py-12 text-center">
+          <svg class="w-14 h-14 text-gray-200 mb-3 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <p class="font-heading font-semibold text-gray-400 text-sm mb-2">Tidak ada armada untuk filter ini</p>
+          <button onclick="resetFilter()" class="font-body text-margasana-green text-xs font-semibold underline underline-offset-2">Tampilkan semua →</button>
+        </div>
+      </div><!-- /mobile wrapper -->
+
+      <!-- Desktop: No Result -->
+      <div id="no-result" class="hidden flex-col items-center justify-center py-16 text-center">
+        <svg class="w-16 h-16 text-gray-200 mb-4 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <p class="font-heading font-semibold text-gray-400 text-sm mb-1">Tidak ada kendaraan untuk filter ini</p>
+        <button onclick="resetFilter()" class="font-body text-margasana-green text-xs font-semibold underline underline-offset-2 mt-2">Tampilkan semua →</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer class="bg-margasana-dark text-white pt-12 pb-20 md:pb-12 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-9 h-9 rounded-full bg-margasana-green flex items-center justify-center flex-shrink-0">
+              <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-white text-sm">Margasana Rental Mobil</div>
+              <div class="font-body text-white/50 text-xs">Banjarmasin</div>
+            </div>
+          </div>
+          <p class="font-body text-white/55 text-xs leading-relaxed">Rental mobil terpercaya di Banjarmasin sejak 1986. Melayani perjalanan dinas, wisata, wedding & transfer bandara.</p>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-4">Navigasi</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html"   class="font-body text-white/55 text-xs hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="katalog.html" class="font-body text-white text-xs">Katalog Armada</a></li>
+            <li><a href="kontak.html"  class="font-body text-white/55 text-xs hover:text-white transition-colors">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-4">Hubungi Kami</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <svg class="w-3.5 h-3.5 text-margasana-light flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              <span class="font-body text-white/55 text-xs leading-relaxed">Jl. A. Yani km 4,5 Komp. Aspol Bina Brata Manunggal 2 no. 1-2, Banjarmasin</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-margasana-light flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+              <a href="tel:+62811506480" class="font-body text-white/55 text-xs hover:text-white transition-colors">+62 811-506-480</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-margasana-light flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              <a href="mailto:pt.borneo.sarana.margasana@gmail.com" class="font-body text-white/55 text-xs hover:text-white transition-colors break-all">pt.borneo.sarana.margasana@gmail.com</a>
+            </li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="https://instagram.com/margasana.rental.banjarmasin" target="_blank" rel="noopener" aria-label="Instagram" class="w-8 h-8 rounded-full bg-white/10 hover:bg-margasana-green flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/62811506480" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-8 h-8 rounded-full bg-white/10 hover:bg-margasana-green flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@margasanacarrent" target="_blank" rel="noopener" aria-label="TikTok" class="w-8 h-8 rounded-full bg-white/10 hover:bg-margasana-green flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center">
+        <p class="font-body text-white/35 text-xs">© 2026 Margasana Rental Mobil Banjarmasin · PT. Borneo Sarana Margasana</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ════════════════════════════════
+       FLOATING
+  ════════════════════════════════ -->
+
+  <button id="wa-float" onclick="openWAPopup()" aria-label="Chat WhatsApp"
+          class="fixed bottom-24 md:bottom-6 right-6 z-50 bg-green-500 text-white rounded-full p-3.5 shadow-lg hover:scale-110 transition-transform group cursor-pointer border-0">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="hidden md:block absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-xs font-body px-2.5 py-1 rounded-lg whitespace-nowrap pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200">Chat WhatsApp</span>
+  </button>
+
+  <button id="back-top"
+          class="is-hidden fixed bottom-40 md:bottom-20 right-6 z-50 bg-white border border-gray-200 text-margasana-text rounded-full p-2.5 shadow-md hover:border-margasana-green hover:text-margasana-green transition-colors"
+          aria-label="Kembali ke atas">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-2px_12px_rgba(0,0,0,0.07)] flex">
+    <a href="index.html" class="bottom-nav-link flex-1 flex flex-col items-center py-2.5 gap-0.5 text-gray-400">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+      <span class="font-body text-xs font-medium">Beranda</span>
+    </a>
+    <a href="katalog.html" class="bottom-nav-link is-active flex-1 flex flex-col items-center py-2.5 gap-0.5">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+      <span class="font-body text-xs font-medium">Katalog</span>
+    </a>
+    <a href="kontak.html" class="bottom-nav-link flex-1 flex flex-col items-center py-2.5 gap-0.5 text-gray-400">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      <span class="font-body text-xs font-medium">Kontak</span>
+    </a>
+    <button onclick="openWAPopup()" class="bottom-nav-link flex-1 flex flex-col items-center py-2.5 gap-0.5 text-gray-400 border-0 bg-transparent cursor-pointer">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="font-body text-xs font-medium">WhatsApp</span>
+    </button>
+  </nav>
+
+
+  <!-- ════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // ════════════
+    // WA POPUP
+    // ════════════
+    const waOverlay = document.getElementById('wa-popup-overlay');
+    const ownerLink = document.getElementById('popup-owner-link');
+    const adminLink = document.getElementById('popup-admin-link');
+
+    function openWAPopup(armada = '') {
+      const msg = armada
+        ? `Halo+Margasana+Rental,+saya+ingin+tanya+ketersediaan+${armada}+untuk+tanggal...`
+        : `Halo+Margasana+Rental,+saya+ingin+informasi+sewa+mobil`;
+      ownerLink.href = `https://wa.me/62811506480?text=${msg}`;
+      adminLink.href = `https://wa.me/62811516800?text=${msg}`;
+      waOverlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeWAPopup() {
+      waOverlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+    waOverlay.addEventListener('click', e => { if (e.target === waOverlay) closeWAPopup(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeWAPopup(); });
+
+    // ════════════
+    // STATUS DOT WITA
+    // ════════════
+    function getCekBuka() {
+      const now  = new Date();
+      const wita = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+      const t    = wita.getUTCHours() * 60 + wita.getUTCMinutes();
+      return t >= 360 && t < 1260;
+    }
+    function updateStatusDot() {
+      const dot   = document.getElementById('status-dot');
+      const label = document.getElementById('status-label');
+      if (!dot || !label) return;
+      if (getCekBuka()) {
+        dot.className     = 'w-2 h-2 rounded-full inline-block bg-green-400 animate-pulse';
+        label.textContent = 'Buka Sekarang';
+      } else {
+        dot.className     = 'w-2 h-2 rounded-full inline-block bg-red-500';
+        label.textContent = 'Tutup';
+      }
+    }
+    updateStatusDot();
+    setInterval(updateStatusDot, 60000);
+
+    // ════════════
+    // AOS
+    // ════════════
+    AOS.init({ duration: 600, easing: 'ease-out-cubic', once: true, offset: 80 });
+
+    // ════════════
+    // HAMBURGER
+    // ════════════
+    const hamburger  = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      hamburger.classList.toggle('is-open');
+      hamburger.setAttribute('aria-label', isOpen ? 'Buka menu' : 'Tutup menu');
+    });
+    document.addEventListener('click', e => {
+      if (!document.getElementById('navbar').contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-label', 'Buka menu');
+      }
+    });
+
+    // ════════════
+    // MOBILE SWIPER — slidesPerView:1, loop:true, stabil
+    // ════════════
+    const swiperKatalog = new Swiper('.swiper-katalog-mobile', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: false,          // loop:false agar filter bisa hide slide
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-katalog-mobile .swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+    });
+
+    // ════════════
+    // FILTER — berlaku desktop & mobile
+    // ════════════
+    const filterBtns    = document.querySelectorAll('[data-filter]');
+    const desktopCards  = document.querySelectorAll('#desktop-grid .card-kendaraan');
+    const lastRowWrap   = document.querySelector('.last-row-wrap');
+    const mobileSlides  = document.querySelectorAll('.swiper-katalog-mobile .swiper-slide');
+    const countNum      = document.getElementById('count-num');
+    const noResult      = document.getElementById('no-result');
+    const noResultMob   = document.getElementById('no-result-mobile');
+    const swiperEl      = document.querySelector('.swiper-katalog-mobile');
+
+    function applyFilter(filter) {
+      let visibleCount = 0;
+
+      // ── Desktop filter ──
+      desktopCards.forEach(card => {
+        const match = filter === 'all' || card.dataset.kategori === filter;
+        if (match) {
+          card.classList.remove('hidden');
+          card.classList.remove('card-animate');
+          void card.offsetWidth;
+          card.classList.add('card-animate');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('card-animate');
+        }
+      });
+
+      // last-row-wrap visibility
+      if (lastRowWrap) {
+        const anyVisible = Array.from(lastRowWrap.querySelectorAll('.card-kendaraan'))
+          .some(c => !c.classList.contains('hidden'));
+        lastRowWrap.style.display = anyVisible ? '' : 'none';
+      }
+
+      // desktop no-result
+      if (noResult) {
+        noResult.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+
+      // ── Mobile filter: show/hide slides ──
+      let mobileVisible = 0;
+      mobileSlides.forEach(slide => {
+        const match = filter === 'all' || slide.dataset.kategori === filter;
+        if (match) {
+          slide.style.display = '';
+          mobileVisible++;
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+
+      // Update Swiper setelah hide/show
+      swiperKatalog.update();
+      swiperKatalog.slideTo(0, 0);
+
+      // mobile no-result
+      if (noResultMob) {
+        noResultMob.style.display = mobileVisible === 0 ? 'flex' : 'none';
+        swiperEl.style.display    = mobileVisible === 0 ? 'none' : '';
+      }
+
+      // update count (pakai desktop sebagai acuan)
+      countNum.textContent = visibleCount;
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        applyFilter(btn.dataset.filter);
+      });
+    });
+
+    function resetFilter() {
+      filterBtns.forEach(b => b.classList.remove('is-active'));
+      document.querySelector('[data-filter="all"]').classList.add('is-active');
+      applyFilter('all');
+    }
+
+    // Initial count
+    applyFilter('all');
+
+    // ════════════
+    // BACK TO TOP
+    // ════════════
+    const backTop = document.getElementById('back-top');
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('is-hidden', window.scrollY <= 400);
+    }, { passive: true });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+</body>
+</html>
