@@ -10,7 +10,6 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Margasana Rental Mobil Banjarmasin">
   <meta property="og:description" content="Sewa mobil terpercaya sejak 1986. Alphard, Fortuner, Hiace & lebih banyak armada.">
   <meta property="og:image" content="https://www.margasanarental.com/assets/img/og-image.jpg">
@@ -18,7 +17,6 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -262,9 +260,6 @@
 </head>
 <body class="font-body">
 
-  <!-- ════════════════════════════════
-       WA POPUP
-  ════════════════════════════════ -->
   <div id="wa-popup-overlay" role="dialog" aria-modal="true" aria-label="Hubungi Kami">
     <div id="wa-popup-modal">
       <button onclick="closeWAPopup()"
@@ -278,7 +273,6 @@
         <h3 class="font-heading font-bold text-xl text-margasana-text mb-1">Hubungi Kami</h3>
         <p class="font-body text-sm text-gray-500">Pilih kontak yang ingin Anda hubungi</p>
       </div>
-      <!-- Owner -->
       <a href="https://wa.me/62811506480?text=Halo+Margasana+Rental,+saya+ingin+informasi+sewa+mobil"
          target="_blank" rel="noopener" onclick="closeWAPopup()"
          class="group flex items-center gap-4 w-full border-2 border-gray-200 hover:border-yellow-400 rounded-2xl p-4 mb-3 transition-all duration-200 hover:bg-yellow-50">
@@ -295,7 +289,6 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
         </svg>
       </a>
-      <!-- Admin -->
       <a href="https://wa.me/62811516800?text=Halo+Margasana+Rental,+saya+ingin+informasi+sewa+mobil"
          target="_blank" rel="noopener" onclick="closeWAPopup()"
          class="group flex items-center gap-4 w-full border-2 border-gray-200 hover:border-margasana-green rounded-2xl p-4 mb-5 transition-all duration-200 hover:bg-margasana-light">
@@ -320,27 +313,25 @@
   </div>
 
 
-  <!-- ════════════════════════════════
-       NAVBAR
-  ════════════════════════════════ -->
   <nav id="navbar" class="is-transparent fixed top-0 left-0 right-0 z-50 px-4 md:px-8">
     <div class="max-w-6xl mx-auto flex items-center justify-between h-16 md:h-20">
 
-      <!-- Logo -->
       <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
         <img src="assets/img/logo.webp" 
              alt="Margasana Rental Mobil Banjarmasin" 
-             class="h-10 w-auto">
+             class="h-10 w-10 rounded-full object-cover shadow-sm">
+        <div class="leading-tight">
+          <div class="nav-logo-text font-heading font-bold text-sm transition-colors duration-300">Margasana</div>
+          <div class="nav-logo-sub font-body text-xs transition-colors duration-300">Rental Mobil</div>
+        </div>
       </a>
 
-      <!-- Desktop Menu -->
       <div class="hidden md:flex items-center gap-8">
         <a href="index.html"   class="nav-link active-link font-body font-semibold text-sm">Beranda</a>
         <a href="katalog.html" class="nav-link font-body font-semibold text-sm hover:text-margasana-green transition-colors">Katalog</a>
         <a href="kontak.html"  class="nav-link font-body font-semibold text-sm hover:text-margasana-green transition-colors">Kontak Kami</a>
       </div>
 
-      <!-- Desktop: Status Dot + CTA -->
       <div class="hidden md:flex items-center gap-4">
         <div class="flex items-center gap-1.5">
           <span id="status-dot" class="w-2 h-2 rounded-full inline-block"></span>
@@ -355,7 +346,6 @@
         </button>
       </div>
 
-      <!-- Hamburger -->
       <button id="hamburger" class="md:hidden flex flex-col gap-[6px] p-2 -mr-1" aria-label="Buka menu">
         <span class="hamburger-line line-1"></span>
         <span class="hamburger-line line-2"></span>
@@ -363,7 +353,6 @@
       </button>
     </div>
 
-    <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg rounded-b-2xl overflow-hidden">
       <div class="flex flex-col py-2">
         <a href="index.html"   class="px-6 py-4 font-body font-semibold text-margasana-green border-b border-gray-100 text-sm">🏠 Beranda</a>
@@ -380,25 +369,19 @@
   </nav>
 
 
-  <!-- ════════════════════════════════
-       HERO
-  ════════════════════════════════ -->
   <section id="hero" class="relative flex items-center justify-center text-white">
     <div class="w-full max-w-3xl mx-auto px-6 text-center" data-aos="fade-up" data-aos-duration="800">
 
-      <!-- Badge Sejak 1986 -->
       <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-body font-semibold px-4 py-1.5 rounded-full mb-6">
         <span class="w-2 h-2 rounded-full bg-margasana-green inline-block animate-pulse"></span>
         Sejak 1986 · Terpercaya di Banjarmasin
       </div>
 
-      <!-- Headline -->
       <h1 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 drop-shadow-md">
         Rental Mobil<br>
         <span class="text-margasana-green">Banjarmasin</span>
       </h1>
 
-      <!-- Sub -->
       <p class="font-body text-white/85 text-base md:text-lg mb-3 leading-relaxed drop-shadow-sm px-2">
         Alphard · Fortuner · Hiace · Pajero · Triton · CRV · Innova · Avanza & lebih banyak pilihan
       </p>
@@ -406,7 +389,6 @@
         Armada terawat · Sopir profesional · Siap 06.00–21.00 WITA
       </p>
 
-      <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-4">
         <button onclick="openWAPopup()"
                 class="inline-flex items-center justify-center gap-2 bg-margasana-green text-white font-body font-semibold text-sm px-7 py-3.5 rounded-full btn-primary hover:bg-margasana-dark shadow-lg">
@@ -421,7 +403,6 @@
         </a>
       </div>
 
-      <!-- Badge 19 Armada -->
       <div class="flex justify-center mb-6">
         <span class="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur border border-white/20 text-white text-xs font-body font-medium px-3 py-1.5 rounded-full">
           <svg class="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -431,10 +412,8 @@
         </span>
       </div>
 
-      <!-- Ticker -->
       <div class="ticker-outer">
         <div class="ticker-track">
-          <!-- Set 1 -->
           <span class="ticker-item">Alphard</span><span class="ticker-dot">·</span>
           <span class="ticker-item">Fortuner</span><span class="ticker-dot">·</span>
           <span class="ticker-item">Hiace</span><span class="ticker-dot">·</span>
@@ -449,7 +428,6 @@
           <span class="ticker-item">Yaris</span><span class="ticker-dot">·</span>
           <span class="ticker-item">Bus</span><span class="ticker-dot">·</span>
           <span class="ticker-item">Wedding Car</span><span class="ticker-dot" style="padding-right:32px">·</span>
-          <!-- Set 2 — duplikat untuk seamless loop -->
           <span class="ticker-item">Alphard</span><span class="ticker-dot">·</span>
           <span class="ticker-item">Fortuner</span><span class="ticker-dot">·</span>
           <span class="ticker-item">Hiace</span><span class="ticker-dot">·</span>
@@ -469,7 +447,6 @@
 
     </div>
 
-    <!-- Scroll indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
       <span class="font-body text-xs text-white/50">Scroll</span>
       <svg class="w-4 h-4 text-white/50 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -479,9 +456,6 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       CARA SEWA
-  ════════════════════════════════ -->
   <section class="bg-white py-16 md:py-24 px-4">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-12" data-aos="fade-up">
@@ -489,7 +463,6 @@
         <h2 class="font-heading font-bold text-3xl md:text-4xl text-margasana-text">Cara Sewa Mobil</h2>
       </div>
 
-      <!-- Desktop -->
       <div class="hidden md:flex items-start justify-center" data-aos="fade-up" data-aos-delay="100">
         <div class="flex flex-col items-center text-center w-52">
           <div class="w-16 h-16 rounded-full bg-margasana-light border-2 border-margasana-green flex items-center justify-center mb-3 shadow-sm">
@@ -526,7 +499,6 @@
         </div>
       </div>
 
-      <!-- Mobile -->
       <div class="md:hidden flex flex-col gap-4" data-aos="fade-up" data-aos-delay="100">
         <div class="flex items-start gap-4 p-4 rounded-2xl bg-margasana-light">
           <div class="w-10 h-10 rounded-full bg-margasana-green text-white font-heading font-bold flex items-center justify-center text-sm flex-shrink-0">1</div>
@@ -554,14 +526,10 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       STATISTIK — bg: #004d21
-  ════════════════════════════════ -->
   <section class="bg-margasana-dark py-16 md:py-20 px-4">
     <div class="max-w-4xl mx-auto">
       <div class="grid grid-cols-3 gap-4 md:gap-12 text-center text-white" data-aos="fade-up">
 
-        <!-- Kolom 1: Sejak 1986 — SPASI FIX -->
         <div>
           <div class="stat-sejak">
             <span class="word-sejak">Sejak</span>
@@ -570,7 +538,6 @@
           <p class="font-body text-sm md:text-base font-medium text-white/75 mt-2">Berpengalaman</p>
         </div>
 
-        <!-- Kolom 2: 19 Armada -->
         <div>
           <div class="stat-number text-4xl md:text-5xl text-margasana-gold mb-1">
             <span class="counter" data-target="19">0</span>
@@ -578,7 +545,6 @@
           <p class="font-body text-sm md:text-base font-medium text-white/75">Armada Tersedia</p>
         </div>
 
-        <!-- Kolom 3: Jam Operasional -->
         <div>
           <div class="stat-number text-xl md:text-4xl text-margasana-gold mb-1 leading-tight">06.00–21.00</div>
           <p class="font-body text-sm md:text-base font-medium text-white/75">Jam Operasional</p>
@@ -589,9 +555,6 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       KENDARAAN UNGGULAN — bg: #f8f9fa
-  ════════════════════════════════ -->
   <section class="bg-margasana-gray py-16 md:py-24 px-4">
     <div class="max-w-6xl mx-auto">
 
@@ -601,10 +564,8 @@
         <p class="font-body text-gray-500 text-sm mt-3 max-w-xl mx-auto">Armada pilihan dengan pengemudi berpengalaman. Cocok untuk perjalanan bisnis, wisata, hingga acara spesial.</p>
       </div>
 
-      <!-- Desktop Grid — 3 kartu -->
       <div class="hidden md:grid grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Alphard New -->
         <div class="card-kendaraan bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 relative">
           <div class="relative">
             <img src="assets/img/armada/alphard-new.jpg"
@@ -626,7 +587,6 @@
           </div>
         </div>
 
-        <!-- Fortuner -->
         <div class="card-kendaraan bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 relative">
           <div class="relative">
             <img src="assets/img/armada/fortuner.jpg"
@@ -648,7 +608,6 @@
           </div>
         </div>
 
-        <!-- Avanza — Terlaris -->
         <div class="card-kendaraan bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 relative">
           <div class="relative">
             <img src="assets/img/armada/avanza.jpg"
@@ -672,12 +631,10 @@
 
       </div>
 
-      <!-- Mobile Swiper — config seperti testimoni (stabil) -->
       <div class="md:hidden" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper swiper-kendaraan overflow-hidden rounded-2xl">
           <div class="swiper-wrapper">
 
-            <!-- Slide: Alphard New -->
             <div class="swiper-slide">
               <div class="card-kendaraan bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 relative mx-2">
                 <div class="relative">
@@ -698,7 +655,6 @@
               </div>
             </div>
 
-            <!-- Slide: Fortuner -->
             <div class="swiper-slide">
               <div class="card-kendaraan bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 relative mx-2">
                 <div class="relative">
@@ -719,7 +675,6 @@
               </div>
             </div>
 
-            <!-- Slide: Avanza -->
             <div class="swiper-slide">
               <div class="card-kendaraan bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 relative mx-2">
                 <div class="relative">
@@ -743,7 +698,6 @@
         </div>
       </div>
 
-      <!-- CTA -->
       <div class="text-center mt-10" data-aos="fade-up">
         <a href="katalog.html"
            class="inline-flex items-center gap-2 border-2 border-margasana-green text-margasana-green font-body font-semibold text-sm px-7 py-3 rounded-full hover:bg-margasana-green hover:text-white transition-all duration-200">
@@ -755,14 +709,10 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       CTA GARANSI — bg: #009640
-  ════════════════════════════════ -->
   <section class="bg-margasana-green py-16 md:py-20 px-4">
     <div class="max-w-5xl mx-auto">
       <div class="grid md:grid-cols-2 gap-10 items-center">
 
-        <!-- Foto Koran -->
         <div class="relative rounded-2xl overflow-hidden h-64 md:h-80" data-aos="fade-right">
           <img src="assets/img/koran.jpg"
                alt="Liputan Media Margasana Rental Banjarmasin"
@@ -775,7 +725,6 @@
           </div>
         </div>
 
-        <!-- Teks -->
         <div class="text-white" data-aos="fade-left" data-aos-delay="100">
           <p class="section-label text-white/70 mb-3">Garansi Kepuasan</p>
           <h2 class="font-heading font-bold text-3xl md:text-4xl mb-4 leading-tight">
@@ -809,9 +758,6 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       TESTIMONI — bg: #ffffff
-  ════════════════════════════════ -->
   <section class="bg-white py-16 md:py-24 px-4">
     <div class="max-w-6xl mx-auto">
 
@@ -820,7 +766,6 @@
         <h2 class="font-heading font-bold text-3xl md:text-4xl text-margasana-text">Apa Kata Mereka?</h2>
       </div>
 
-      <!-- Desktop -->
       <div class="hidden md:grid grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="100">
 
         <div class="bg-margasana-light rounded-2xl p-6 border border-margasana-green/10 flex flex-col">
@@ -864,7 +809,6 @@
 
       </div>
 
-      <!-- Mobile Swiper Testimoni -->
       <div class="md:hidden swiper swiper-testimoni" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper-wrapper pb-2">
 
@@ -921,9 +865,6 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       GALLERY — bg: #e8f5ee
-  ════════════════════════════════ -->
   <section class="bg-margasana-light py-16 md:py-24 px-4">
     <div class="max-w-6xl mx-auto">
 
@@ -932,7 +873,6 @@
         <h2 class="font-heading font-bold text-3xl md:text-4xl text-margasana-text">Armada & Momen Bersama</h2>
       </div>
 
-      <!-- Desktop Masonry -->
       <div class="hidden md:block" data-aos="fade-up" data-aos-delay="100">
         <div class="gallery-masonry">
           <div class="gallery-item-1 rounded-2xl overflow-hidden shadow-sm">
@@ -974,7 +914,6 @@
         </div>
       </div>
 
-      <!-- Mobile Swiper Gallery -->
       <div class="md:hidden swiper swiper-gallery" data-aos="fade-up">
         <div class="swiper-wrapper pb-2">
           <div class="swiper-slide px-1"><div class="rounded-2xl overflow-hidden h-52"><img src="assets/img/gallery/gallery-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80'" alt="Galeri Margasana" class="w-full h-full object-cover" loading="lazy"></div></div>
@@ -991,9 +930,6 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       LAYANAN — bg: #ffffff
-  ════════════════════════════════ -->
   <section class="bg-white py-16 md:py-24 px-4">
     <div class="max-w-5xl mx-auto">
 
@@ -1039,19 +975,19 @@
   </section>
 
 
-  <!-- ════════════════════════════════
-       FOOTER
-  ════════════════════════════════ -->
   <footer class="bg-margasana-dark text-white pt-12 pb-20 md:pb-12 px-4">
     <div class="max-w-5xl mx-auto">
       <div class="grid md:grid-cols-3 gap-8 mb-8">
 
         <div>
-          <!-- LOGO FOOTER MENGGUNAKAN IMG -->
           <div class="flex items-center gap-2 mb-3">
             <img src="assets/img/logo.webp" 
                  alt="Margasana Rental Mobil Banjarmasin" 
-                 class="h-12 w-auto">
+                 class="w-10 h-10 rounded-full object-cover flex-shrink-0">
+            <div>
+              <div class="font-heading font-bold text-white text-sm">Margasana Rental Mobil</div>
+              <div class="font-body text-white/50 text-xs">Banjarmasin</div>
+            </div>
           </div>
           <p class="font-body text-white/55 text-xs leading-relaxed">Rental mobil terpercaya di Banjarmasin sejak 1986. Melayani perjalanan dinas, wisata, wedding & transfer bandara.</p>
         </div>
@@ -1102,11 +1038,6 @@
   </footer>
 
 
-  <!-- ════════════════════════════════
-       FLOATING
-  ════════════════════════════════ -->
-
-  <!-- WA Float -->
   <button id="wa-float" onclick="openWAPopup()" aria-label="Chat WhatsApp"
           class="fixed bottom-24 md:bottom-6 right-6 z-50 bg-green-500 text-white rounded-full p-3.5 shadow-lg hover:scale-110 transition-transform group cursor-pointer border-0">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -1117,7 +1048,6 @@
     </span>
   </button>
 
-  <!-- Back to Top -->
   <button id="back-top"
           class="is-hidden fixed bottom-40 md:bottom-20 right-6 z-50 bg-white border border-gray-200 text-margasana-text rounded-full p-2.5 shadow-md hover:border-margasana-green hover:text-margasana-green transition-colors"
           aria-label="Kembali ke atas">
@@ -1126,10 +1056,9 @@
     </svg>
   </button>
 
-  <!-- Mobile Bottom Nav -->
   <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-2px_12px_rgba(0,0,0,0.07)] flex">
     <a href="index.html" class="bottom-nav-link is-active flex-1 flex flex-col items-center py-2.5 gap-0.5">
-      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
       <span class="font-body text-xs font-medium">Beranda</span>
     </a>
     <a href="katalog.html" class="bottom-nav-link flex-1 flex flex-col items-center py-2.5 gap-0.5 text-gray-400">
@@ -1147,9 +1076,6 @@
   </nav>
 
 
-  <!-- ════════════════════════════════
-       SCRIPTS
-  ════════════════════════════════ -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
 
