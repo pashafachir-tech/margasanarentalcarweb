@@ -12,13 +12,6 @@
   <meta name="apple-mobile-web-app-title" content="Margasana" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#009640" />
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Margasana" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <meta name="theme-color" content="#009640" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -109,17 +102,14 @@
   <!-- NAVBAR -->
   <nav class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50 px-4 md:px-8">
     <div class="max-w-6xl mx-auto flex items-center justify-between h-16 md:h-20">
+      
+      <!-- LOGO NAVBAR MENGGUNAKAN IMG -->
       <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
-        <div class="w-9 h-9 rounded-full bg-margasana-green flex items-center justify-center shadow">
-          <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white">
-            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
-          </svg>
-        </div>
-        <div class="leading-tight">
-          <div class="font-heading font-bold text-margasana-green text-sm">Margasana</div>
-          <div class="font-body text-gray-400 text-xs">Rental Mobil</div>
-        </div>
+        <img src="assets/img/logo.webp" 
+             alt="Margasana Rental Mobil Banjarmasin" 
+             class="h-10 w-auto">
       </a>
+
       <div class="hidden md:flex items-center gap-8">
         <a href="index.html"   class="nav-link font-body font-semibold text-sm">Beranda</a>
         <a href="katalog.html" class="nav-link font-body font-semibold text-sm">Katalog</a>
@@ -179,7 +169,7 @@
         <a href="index.html"
            class="inline-flex items-center justify-center gap-2 bg-margasana-green text-white font-body font-semibold text-sm px-6 py-3 rounded-full hover:bg-margasana-dark transition">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
           </svg>
           Kembali ke Beranda
         </a>
@@ -232,7 +222,7 @@
   <!-- Mobile Bottom Nav -->
   <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-2px_12px_rgba(0,0,0,0.07)] flex">
     <a href="index.html" class="bottom-nav-link flex-1 flex flex-col items-center py-2.5 gap-0.5 text-gray-400">
-      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
       <span class="font-body text-xs font-medium">Beranda</span>
     </a>
     <a href="katalog.html" class="bottom-nav-link flex-1 flex flex-col items-center py-2.5 gap-0.5 text-gray-400">
