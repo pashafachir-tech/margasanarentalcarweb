@@ -1208,7 +1208,12 @@
 
     // ── WA Popup ──
     const waOverlay = document.getElementById('wa-popup-overlay');
-    function openWAPopup() {
+    function openWAPopup(armada) {
+      const baseMsg = armada
+        ? `Halo+Margasana+Rental,+saya+ingin+tanya+ketersediaan+${armada}+untuk+tanggal...`
+        : `Halo+Margasana+Rental,+saya+ingin+informasi+sewa+mobil`;
+      document.getElementById('popup-owner-link').href = `https://wa.me/62811506480?text=${baseMsg}`;
+      document.getElementById('popup-admin-link').href = `https://wa.me/62811516800?text=${baseMsg}`;
       waOverlay.classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
